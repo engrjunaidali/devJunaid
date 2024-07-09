@@ -5816,7 +5816,9 @@ img.loader {
 =================================================================== */
 
 .dark-layout footer {
-	background: #003d63 !important;
+	-webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .footer-social li {
@@ -7264,16 +7266,18 @@ ul.side-nav li a:hover {
 	align-items: center;
 }
 .navbar_destop ul li a:hover{
-	color: #ff014f;
+	/* color: #ff014f; */
+	color: var(--bg-white);
 }
 
 .active_anc{
 	border-bottom: 2px solid white;
-	color: #ff014f;
+	color: var(--bg-white);
 }
 
 .navbar_destop ul li::after{
-	border-top: 2px solid #ee2852;
+	/* border-top: 2px solid #ee2852; */
+	border-top: 2px solid var(--black);;
 	position: absolute;
 	content: "";
 	display: block;
