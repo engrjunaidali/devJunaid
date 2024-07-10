@@ -7457,7 +7457,8 @@ ul.side-nav li a:hover {
 .cupmnay_name_work h5{
 	font-size: 14px;
 	text-transform:capitalize;
-	color:#ff014f
+	/* color:#ff014f */
+	color:var(--bg-gray)
 }
 
 .logo_wrapper_cum{
@@ -7498,7 +7499,8 @@ ul.side-nav li a:hover {
   }
 .redmore-btn{
 	background-color: transparent;
-	background-color: #ff014f;
+	/* background-color: #ff014f; */
+	background-color: var(--color-primary);
 	color: #fff;
 	outline: none;
 	border-radius: 6px;
@@ -7528,7 +7530,7 @@ ul.side-nav li a:hover {
 .my_pic_wrapper{
 	position: relative;
 	width: 460px;
-	height: 500px;
+	/* height: 500px; */
 	background-color: #111339;
 	border-radius: 10px;
 	border-top-right-radius: 10px;
