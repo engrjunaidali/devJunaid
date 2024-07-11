@@ -7229,8 +7229,7 @@ ul.side-nav li a:hover {
 
 .weblogo h2{
 	font-size: 40px;
-	/* font-weight: ; */
-	color: #ee2852;
+	color: white;
 }
 
 .weblogo span{
@@ -7277,7 +7276,7 @@ ul.side-nav li a:hover {
 
 .navbar_destop ul li::after{
 	/* border-top: 2px solid #ee2852; */
-	border-top: 2px solid var(--black);;
+	border-top: 2px solid var(--white);
 	position: absolute;
 	content: "";
 	display: block;
@@ -7762,7 +7761,7 @@ h2 {
 
 
 .info a:hover{
-	color: #ff014f;
+	color: var(--white);
 }
 
 .info h5:hover{
