@@ -6846,7 +6846,7 @@ footer {
 }
 
 .pf-item .overlay-content .content span {
-	color: var(--color-paragraph);
+	color: var(--bg-gray);
 }
 
 .side .widget .logo::after {
