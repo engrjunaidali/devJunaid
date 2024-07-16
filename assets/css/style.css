@@ -4999,7 +4999,7 @@ ul.biography-table li p {
 
 .education-table {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr; */
 	grid-column-gap: 60px;
 	grid-row-gap: 40px;
 }
@@ -5015,6 +5015,7 @@ ul.biography-table li p {
 	font-weight: 800;
 	padding: 0 10px;
 	margin-bottom: 15px;
+	border-radius: 22px;
 }
 
 .education-table h5 {
