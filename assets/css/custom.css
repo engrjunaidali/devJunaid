@@ -32,4 +32,21 @@
 	button.navbar-toggle{
 		color: #232323;
 	}
+
+    .banner-style-one .thumb{
+        display: none;
+    }
+
+    /* .banner-style-one .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-style-one .info {
+        order: 2; 
+    }
+
+    .banner-style-one .thumb {
+        order: 1;
+    } */
 }
