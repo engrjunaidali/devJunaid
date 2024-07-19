@@ -307,9 +307,9 @@
                 <!-- Single Item -->
                 <div class="service-style-one col-lg-4 col-md-6">
                     <div class="service-style-one-item">
-                        <img src="assets/img/icon/4.webp" alt="Icon">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Ecommerce
-                        Website</a></h4>
+                        <img src="assets/img/icon/wordpress.png" alt="Icon">
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Wordpress
+                        </a></h4>
                         <p>
                             I specialize in designing and developing cutting-edge eCommerce websites. Using industry-leading platforms and technologies like <span class="specials">WooCommerce</span>, <span class="specials">Shopify</span>, <span class="specials">Magento</span>, and <span class="specials">custom solutions</span>, I create user-friendly, secure, and scalable online stores. I create eCommerce websites that drive sales. Let's build your digital storefront and grow your business together!
                         </p>
@@ -362,87 +362,46 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                    <button class="btn btn-primary btn-sm circle" onclick="filterPortfolio('all')">Show All</button>
+                    <button class="btn btn-primary btn-sm circle" onclick="filterPortfolio('websites')">Websites</button>
+                    <button class="btn btn-primary btn-sm circle" onclick="filterPortfolio('web_application')">Web Applications</button>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12 gallery-content mb--15">
                     <div class="magnific-mix-gallery masonary">
-                        <div id="portfolio-grid" class="gallery-items colums-3">
-                            <!-- Single Item -->
-                            <div class="pf-item">
+                        <div id="portfolio-grid" class="gallery-items colums-2">
+
+                            <div class="pf-item" data-category="websites">
                                 <div class="overlay-content">
                                     <img src="assets/img/portfolio/Regal-Media-Press-Elevating-Your-Industry-Presence.png" alt="thumb">
                                     <div class="content">
                                         <div class="title">
-                                            <span>Wordpress</span>
-                                            <h5><a href="https://regalmediapress.com" target="_blank">Regal Media Press</h5>
+                                            <span><i class="fa fa-wordpress"></i> Wordpress</span>
+                                            <h5><a href="https://regalmediapress.com" target="_blank">Regal Media Press</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="pf-item">
+                            <div class="pf-item" data-category="websites">
                                 <div class="overlay-content">
                                     <img src="assets/img/portfolio/VillageDukaan.png" alt="thumb">
                                     <div class="content">
                                         <div class="title">
-                                            <span>React</span>
+                                            <span> <i class="fa fa-globe"></i> React</span>
                                             <h5><a href="https://villagedukaan.com/"
                                                     target="_blank">Village Dukaan</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="pf-item">
+                            <div class="pf-item" data-category="websites">
                                 <div class="overlay-content">
-                                    <img src="assets/img/portfolio/helpwithmyonlineclass.png" alt="thumb">
-                                    <div class="content">
-                                        <div class="title">
-                                            <span>Online Classes Help</span>
-                                            <h5><a href="https://helpwithmyonlineclass.com" target="_blank">Full-Stack
-                                                    Project<a></h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-
-                            <!-- Single Item -->
-                            <div class="pf-item">
-                                <div class="overlay-content">
-                                    <img src="assets/img/portfolio/work5.jpg" alt="thumb">
-                                    <div class="content">
-                                        <div class="title">
-                                            <span>Simulations</span>
-                                            <h5><a href="https://onlinesimulationexperts.com/" target="_blank">Front-End
-                                                    Project</a>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Item -->
-
-                            <!-- Single Item -->
-                            <div class="pf-item">
-                                <div class="overlay-content">
-                                    <img src="assets/img/portfolio/work6.jpg" alt="thumb">
-                                    <div class="content">
-                                        <div class="title">
-                                            <span>Granule Services</span>
-                                            <h5><a href="https://granuleservices.com" target="_blank">Full-Stack
-                                                    Project</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Item -->
-                            <div class="pf-item">
-                                <div class="overlay-content">
-                                    <img src="assets/img/portfolio/work7.jpg" alt="thumb">
+                                    <img src="assets/img/portfolio/work7.png" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Onlinecourseexperts</span>
@@ -452,10 +411,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Single Item -->
-                            <div class="pf-item">
+
+                            <div class="pf-item" data-category="websites">
                                 <div class="overlay-content">
-                                    <img src="assets/img/portfolio/work8.jpg" alt="thumb">
+                                    <img src="assets/img/portfolio/work4.png" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>HTML CSS</span>
+                                            <h5><a href="https://helpwithmyonlineclass.com" target="_blank">Online Classes Help<a></h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+
+                            <!-- Single Item -->
+                            
+                            <!-- End Single Item -->
+
+                            <div class="pf-item" data-category="websites">
+                                <div class="overlay-content">
+                                    <img src="assets/img/portfolio/work8.png" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Digital Marketing</span>
@@ -466,15 +444,35 @@
                                 </div>
                             </div>
 
+                            
+
+
                             <!-- Single Item -->
-                            <div class="pf-item">
+                            <div class="pf-item" data-category="websites">
                                 <div class="overlay-content">
-                                    <img src="assets/img/portfolio/work10.jpg" alt="thumb">
+                                    <img src="assets/img/portfolio/work6.png" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Granule Services</span>
+                                            <h5><a href="https://granuleservices.com" target="_blank">Full-Stack
+                                                    Project</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            
+                            <!-- Single Item -->
+                            
+                            <!-- Single Item -->
+                            <div class="pf-item" data-category="websites">
+                                <div class="overlay-content">
+                                    <img src="assets/img/portfolio/work10.png" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Product Designing</span>
                                             <h5><a href="https://socialendpoint.com/Portfolio/GAMINGWORLD"
-                                                    target="_blank">Creative Work
+                                                    target="_blank">Wordpress
                                             </h5>
                                         </div>
 
@@ -558,7 +556,7 @@
                     </div>
                     <div class="myName">
                         <h5>Junaid Ali</h5>
-                        <h6>Web Developer</h6>
+                        <h6>Full Stack Developer</h6>
                     </div>
                 </div>
                 <div class="about-style-six col-lg-6 offset-lg-1">
@@ -596,12 +594,12 @@
 
                             <li>
                                 <div class="icon_wrapper">
-                                    <img src="assets/img/icon/creative.png" alt="js" loading="lazy"
+                                    <img src="assets/img/icon/wordpress.png" alt="js" loading="lazy"
                                         style="margin-top: -4%;" />
                                 </div>
                                 <div class="content">
-                                    <h4>Creative Web Work</h4>
-                                    <span>Html, Css, Js</span>
+                                    <h4>Wordpress</h4>
+                                    <span>Theme customization, plugin integration...</span>
                                 </div>
                             </li>
                         </ul>
@@ -838,35 +836,28 @@
                                                 <!---INTERMEDATE-->
 
 
-                                                <!---WEB DEVELOPMENT LEVEL 3-->
-                                                <!-- <li>
-                                                    <h4 style="text-transform: uppercase;">Web Development Level 3</h4>
-                                                    <h5>Shaheed allah bux soomro university</h5>
-                                                    <span>2020 - 2021</span>
+                                                <!---INTERMEDATE-->
+                                                <li>
+                                                    <h4 style="text-transform: uppercase;">Intermediate</h4>
+                                                    <h5>Government Boys Degree College, Sukkur</h5>
+                                                    <span>2017 - 2019</span>
                                                     <p>
-                                                        During a one-year training program, I received extensive and
-                                                        in-depth education in web development, despite starting with limited
-                                                        knowledge. Throughout my journey in web development, I learned
-                                                        numerous new concepts and techniques, and by working on various
-                                                        projects, I was able to apply what I learned effectively.
+                                                        Completed a two-year intermediate program focusing on pre-engineering subjects. This education provided a strong foundation, significantly contributing to my academic and professional growth.
                                                     </p>
-                                                </li> -->
-                                                <!---WEB DEVELOPMENT LEVEL 3-->
+                                                </li>
+                                                <!---INTERMEDATE-->
 
-
-                                                <!---WEB DESNING-->
-                                                <!-- <li>
-                                                    <h4>GREEN VALLEY INSTITUTE SCIENCE & TECHNOLOGY</h4>
-                                                    <h5>Web Designing & Web Development</h5>
-                                                    <span>2016 - 2017</span>
+                                                <!---Matric-->
+                                                <li>
+                                                    <h4 style="text-transform: uppercase;">Matriculation</h4>
+                                                    <h5>The Smart School Zulaikha Campus, Sukkur</h5>
+                                                    <span>2015 - 2017</span>
                                                     <p>
-                                                        The training provided by universities in order to prepare people to
-                                                        work in various sectors of the economy or areas of culture.
+                                                        Successfully completed a two-year matriculation program with a focus on general science subjects.
                                                     </p>
-                                                </li> -->
-                                                <!---WEB DESNING-->
+                                                </li>
+                                                <!---Matric-->
 
-                                                
                                         </ul>
                                     </div>
                                 </div>
