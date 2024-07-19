@@ -13,30 +13,44 @@
     /*======js my exprince function============*/
     // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
     $(".moreless-button").click(function () {
-      $(".moretext").slideToggle();
-      if ($(".moreless-button").text() == "Read more") {
+      // $(".moretext").slideToggle();
+      if ($(".moreless-button").text() === "Read more") {
+        $(".moretext").css("display", "block");
         $(this).text("Read less");
       } else {
+        $(".moretext").css("display", "none");
         $(this).text("Read more");
       }
     });
 
     // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
     $(".moreless-button1").click(function () {
-      $(".moretext1").slideToggle();
       if ($(".moreless-button1").text() == "Read more") {
+        $(".moretext1").css("display", "block");
         $(this).text("Read less");
       } else {
+        $(".moretext1").css("display", "none");
         $(this).text("Read more");
       }
     });
 
     // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
     $(".moreless-button2").click(function () {
-      $(".moretext2").slideToggle();
       if ($(".moreless-button2").text() == "Read more") {
+        $(".moretext2").css("display", "block");
         $(this).text("Read less");
       } else {
+        $(".moretext2").css("display", "none");
+        $(this).text("Read more");
+      }
+    });
+
+    $(".moreless-button3").click(function () {
+      if ($(".moreless-button3").text() == "Read more") {
+        $(".moretext3").css("display", "block");
+        $(this).text("Read less");
+      } else {
+        $(".moretext3").css("display", "none");
         $(this).text("Read more");
       }
     });

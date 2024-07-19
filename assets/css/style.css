@@ -5015,6 +5015,7 @@ ul.biography-table li p {
 	font-weight: 800;
 	padding: 0 10px;
 	margin-bottom: 15px;
+	border-radius: 25px;
 }
 
 .education-table h5 {
@@ -7496,6 +7497,10 @@ ul.side-nav li a:hover {
 .moretext2 {
 	display: none;
   }
+.moretext3 {
+	display: none;
+}
+
 .redmore-btn{
 	background-color: transparent;
 	/* background-color: #ff014f; */
