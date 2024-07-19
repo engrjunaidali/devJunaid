@@ -49,4 +49,8 @@
     .banner-style-one .thumb {
         order: 1;
     } */
+
+    #mobile_hero_buttons{
+        display: block !important;
+    }
 }

@@ -6063,6 +6063,7 @@ footer {
 
 	.banner-style-one .button {
 		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 	
 
@@ -7756,7 +7757,7 @@ h2 {
 .myName{
 	display:none;
 }
-#myresme{
+#mobile_hero_buttons{
 	margin-bottom: 80px;
 }
 }
