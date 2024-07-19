@@ -21,3 +21,15 @@
     text-decoration: underline;
     font-weight: bold;
 }
+
+@media (max-width: 576px) {
+    .shape-center {
+        display: none;
+    }
+	.navbar {
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+	button.navbar-toggle{
+		color: #232323;
+	}
+}
