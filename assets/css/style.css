@@ -6496,7 +6496,7 @@ footer {
 .ambrox-preloader .animation-preloader .txt-loading .letters-loading:before {
 	-webkit-animation: letters-loading 4s infinite;
 	animation: letters-loading 4s infinite;
-	color: #000000;
+	color: var(--color-primary);
 	content: attr(data-text-preloader);
 	left: 0;
 	opacity: 0;
