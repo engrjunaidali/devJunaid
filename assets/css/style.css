@@ -2255,7 +2255,7 @@ p {
 
 .btn-sm {
 	padding: 16px 50px;
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 /* ============================================================== 
@@ -3561,7 +3561,7 @@ header.header-fixed .video-play-button.theme:after {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	z-index: -1;
+	z-index: -2;
 	width: 100%;
 }
 
