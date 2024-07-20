@@ -53,4 +53,8 @@
     #mobile_hero_buttons{
         display: block !important;
     }
+
+    .mobile_hero_button{
+        padding: 10px 20px !important; border-bottom: 1px solid white;
+    }
 }
