@@ -3786,6 +3786,7 @@ header.header-fixed .video-play-button.theme:after {
 	background: rgba(0, 0, 0, 0.2) !important;
 	background: transparent;
 	backdrop-filter: blur(10px);
+	border-radius: 25px;
 }
 
 .dark-layout .services-single-content .faq-style-one button.accordion-button {
@@ -5085,6 +5086,7 @@ ul.biography-table li p {
 .dark-layout .experience-content-box::after {
 	background: rgba(0, 0, 0, 0.1) !important;
 	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
 }
 
 .dark-layout ul.biography-table li::after {
@@ -5775,6 +5777,7 @@ img.loader {
 
 .dark-layout .contact-content .form-box {
 	background: rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
 }
 
 .dark-layout .contact-content .form-box input, 
