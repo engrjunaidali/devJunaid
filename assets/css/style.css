@@ -7189,13 +7189,12 @@ ul.side-nav li a:hover {
 /*===============<<<<<<<[custem css]>>>>>>>>>===================*/
 
 #header_container{
-	/* width: 80%; */
 	position: fixed;
-	z-index: 100;
+	width: 100%;
+	z-index: 1000;
 }
 
-.web_header{
-	/* width: 100%; */
+/* .web_header{
 	height: 70px;
 	border-radius: 50px;
 	margin-top: -120px;
@@ -7215,7 +7214,32 @@ ul.side-nav li a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+} */
+
+
+
+.web_header {
+    background-color: rgba(255,255,255,0.1); /* Semi-transparent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+	justify-content: center;
+	align-items: center;
 }
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    padding: 10px 5%;
+}
+
 
 .logo_wrapper_col{
 	display: flex;
@@ -7265,7 +7289,7 @@ ul.side-nav li a:hover {
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
-	height: 70px;
+	/* height: 70px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -7280,8 +7304,7 @@ ul.side-nav li a:hover {
 	color: var(--bg-white);
 }
 
-.navbar_destop ul li::after{
-	/* border-top: 2px solid #ee2852; */
+/* .navbar_destop ul li::after{
 	border-top: 2px solid var(--white);
 	position: absolute;
 	content: "";
@@ -7292,8 +7315,8 @@ ul.side-nav li a:hover {
 	top: 68px;
 	background: transparent;
 	transition: all 0.3s;
-	
-}
+} */
+
 .navbar_destop ul li:hover::after, li > .active-nav::after {
 	width: 100%;
 	
