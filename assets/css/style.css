@@ -2615,6 +2615,15 @@ header.header-fixed {
 		padding-left: 110px;
 	} */
 }
+@media (max-width: 1023px) {
+	.web_header {
+        display: none;
+    }
+
+	/* body.bg-fixed {
+		padding-left: 110px;
+	} */
+}
 
 header.header-fixed .logo a {
 	display: block;
@@ -7258,7 +7267,7 @@ ul.side-nav li a:hover {
 }
 
 .weblogo h2{
-	font-size: 40px;
+	font-size: 36px;
 	color: white;
 }
 
