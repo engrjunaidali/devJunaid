@@ -1,1255 +1,1181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ambrox - Personal Portfolio Template">
-    <!-- ========== Page Title ========== -->
-    <title>Junaid Ali</title>
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/faveicon/download.webp" type="image/x-icon">
-    <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/themify-icons.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/flaticon-set.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/magnific-popup.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/validnavs.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/helper.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/unit-test.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- ========== End Stylesheet ========== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-fixed dark-layout" style="background-image: url(assets/img/shape/banner-2.webp);">
-    <div class="blob"></div>
-    <!-- Subscribe Modal -->
-    <div class="daligBox" style="display: none;">
-        <div class="container">
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Junaid Ali" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Junaid Ali">Junaid Ali</h1>
+
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:thejunaidali21@gmail.com" class="contact-link">thejunaidali21@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Karachi, Sindh, Pakistan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link " data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As a Full Stack Developer with a Bachelor's degree in Computer Science and Information Technology from NED
+            University, Karachi, I have over 2 years of experience in creating robust web applications.
+          </p>
+          <p>
+            My expertise lies in PHP, Laravel, and React.js, enabling me to develop scalable systems like eCommerce
+            platforms, Point of Sale solutions, and custom content management systems.
+          </p>
+          <p>
+            I possess strong skills in both frontend and backend development, focusing on user-friendly interfaces and
+            seamless API integrations.
+          </p>
+          <p>
+            My commitment to innovation and efficiency drives me to deliver high-quality, tailored solutions that
+            enhance business operations and user engagement.
+
+            Let's connect to explore how I can contribute to your next project!
+          </p>
+          <p>
+            thejunaidali21@gmail.com 📮
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Expertise</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Laravel</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">React</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Wordpress</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rohit Patil</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dipti Sinha</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
             <div class="modal-content">
-                <div class="modal-body" style="background-color:#040836;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="popimge">
-                                    <img src="assets/img/illustration/26c041a0-ba38-4fa4-925c-bc3e3fcb1344 (1).png"
-                                        alt="myImage" loading="lazy" />
-                                </div>
-                            </div>
-                            <div class="col-md-7 py-5 relative">
-                                <div class="model-my-info">
-                                    <h4>WELCOME TO MY WEBSITE</h4>
-                                </div>
-                                <div class="text-content">
-                                    <p>Hi, I'm Junaid Ali, a web developer. Looking for help with a web project? Check out my portfolio and get in touch!<br><br><strong><a href="mailto:engrjunaidali0@gmail.com">
-                                        ✉  engrjunaidali0@gmail.com</a></strong></p><br>
-                                </div>
-                                <div class="hire-me-btn">
-                                    <a href="#contact"><button id="conteMe">Contact</button></a>
-                                    <button id="colos_model_box">Close <i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
             </div>
+
+          </section>
+
         </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Of Engineering Pune </h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of Texas</h4>
+
+              <span>2018 — 2024</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio active" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Websites</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-    </div>
-    <!-----css poup model box-->
-    <!-- Start Preloader 
-    ============================================= -->
-    <div id="preloader">
-        <div id="ambrox-preloader" class="ambrox-preloader">
-            <div class="animation-preloader">
-                <div class="spinner"></div>
-                <!-- <div class="txt-loading">
-                    <span data-text-preloader="J" class="letters-loading">
-                        _
-                    </span>
-                    <span data-text-preloader="U" class="letters-loading">
-                        _
-                    </span>
-                    <span data-text-preloader="N" class="letters-loading">
-                        _
-                    </span>
-                    <span data-text-preloader="A" class="letters-loading">
-                        _
-                    </span>
-                    <span data-text-preloader="I" class="letters-loading">
-                        _
-                    </span>
-                    <span data-text-preloader="D" class="letters-loading">
-                        _
-                    </span>
-                </div> -->
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Preloader -->
-    <!-- <div class="web_header">
-        <div class="header_wrapper main-navigation nav-down">
-            <div class="logo_wrapper_col">
-                <div class="weblogo">
-                    <a href="#home">
-                        <h2>Junaid <span>Ali</span></h2>
-                    </a>
-                </div>
-                <div class="navbar_destop">
-                    <nav>
-                        <ul>
-                            <li class="active _anc"><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#pricing">Experience</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="button">
-                <a class="btn btn-md circle btn-theme effect" href="#contact">HIRE ME</a>
-            </div>
-        </div>
-    </div> -->
-    <!-- Header 
-    ============================================= -->
-    <header id="home">
-        <!-- Start Navigation -->
-        <nav
-            class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background" style="background-color: #ffffff00;">
-            <div class="container d-flex justify-content-between align-items-center">
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars" style="color: white;"></i>
-                    </button>
-                    <a class='navbar-brand' href='/'>
-                        <div class="weblogo" style="height: 50px;">
-                            <h2 style="color: #232323; display: none;">Junaid <span style="color: #232323;">Ali</span></h2>
-                        </div>
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <div class="weblogo" style="height: 50px;">
-                        <h2 style="color:white; font-weight: bold;">Junaid<span>Ali</span></h2>
-                    </div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-times"></i>
-                    </button>
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="active_anc"><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#pricing">Experiences</a></li>
-                        <li><a href="#testinomials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                <!-- Main Nav -->
-            </div>
-            <!-- Overlay screen for menu -->
-            <div class="overlay-screen"></div>
-            <!-- End Overlay screen for menu -->
-        </nav>
-        <!-- End Navigation -->
-    </header>
-    <!-- End Header -->
-    <!-- Start Header Fixed 
-    ============================================= -->
-    <!-- <header class="header-fixed">
-        <div class="me_des">
-            <h4>
-                <span>
-                <&nbsp;WEB</span>&nbsp;DEVELOPER&nbsp;/>
-            </h4>
-        </div>
-    </header> -->
-    <!-- End Header Fixed -->
-    <!-- Start Banner 
-    ============================================= -->
-    <div class="auto-height bg-fixed banner-style-one">
-        <div class="container">
-            <div id="header_container">
-                <div class="web_header">
-                    <div class="header_wrapper main-navigation nav-down">
-                        <div class="logo_wrapper_col">
-                            <div class="weblogo">
-                                <a href="#home">
-                                    <h2 style="margin-bottom: 0;">Junaid <span>Ali</span></h2>
-                                </a>
-                            </div>
-                            <div class="navbar_destop">
-                                <nav>
-                                    <ul>
-                                        <li class="active_anc"><a href="#home">Home</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#pricing">experience</a></li>
-                                        <li><a href="#testinomials">Testimonials</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <a class="btn circle btn-theme effect" href="#contact">HIRE ME</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="double-items">
-                <div class="row align-center">
-                    <div class="col-lg-6 info">
-                        <h1 class="text-invisible">WELCOME</h1>
-                        <h2>Hey I'm <br /><span>Junaid Ali</span></h2>
-                        <h3 class="title">
-                            <span class="header-caption" id="page-top">
-                                <!-- type headline start-->
-                                <span class="cd-headline clip is-full-width">
-                                    <!-- ROTATING TEXT -->
-                                    <span class="cd-words-wrapper">
-                                        <b class="is-visible">Full Stack Developer</b>
-                                        <b class="is-hidden">Laravel Developer</b>
-                                        <b class="is-hidden">React js Developer</b>
-                                    </span>
-                                </span>
-                                <!-- type headline end -->
-                            </span>
-                        </h3>
-                        <div class="button mt-55" id="myresme">
-                            <a class="btn btn-md circle btn-theme effect" href="/assets/img/resume.pdf"
-                                download="cv">Download CV</a>
-                        </div>
-                        <div class="container" id="mobile_hero_buttons" style="display: none;">
-                            <div class="row">
-                                <a class="mobile_hero_button" href="#services">
-                                    <i class="fa fa-arrow-circle-o-right wow flash" data-wow-iteration="infinite"
-                                        data-wow-duration="1500ms" aria-hidden="true"></i> Services</a>
-                                <a class="mobile_hero_button" href="#portfolio">
-                                    <i class="fa fa-arrow-circle-o-right wow flash" data-wow-iteration="infinite"
-                                        data-wow-duration="1500ms" aria-hidden="true"></i> Portfolio</a>
-                                <a class="mobile_hero_button" href="#pricing">
-                                    <i class="fa fa-arrow-circle-o-right wow flash" data-wow-iteration="infinite"
-                                        data-wow-duration="1500ms" aria-hidden="true"></i> Experiences</a>
-                                <a class="mobile_hero_button" href="#testinomials">
-                                    <i class="fa fa-arrow-circle-o-right wow flash" data-wow-iteration="infinite"
-                                        data-wow-duration="1500ms" aria-hidden="true"></i> Testimonials</a>
-                                <a class="mobile_hero_button" href="#contact">
-                                    <i class="fa fa-arrow-circle-o-right wow flash" data-wow-iteration="infinite"
-                                        data-wow-duration="1500ms" aria-hidden="true"></i> Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 thumb" data-wow-delay="900ms">
-                        <div class="me_pic_wrapper">
-                            <!-- <img class=" wow fadeInDown" src="assets/img/illustration/me1.webp" alt="Thumb"> -->
-                            <img class=" wow fadeInDown"
-                                src="assets/img/illustration/26c041a0-ba38-4fa4-925c-bc3e3fcb1344 (1).png" alt="Thumb"
-                                style="width: none !important;">
-                        </div>
-                        <div class="shape-center">
-                            <div class="shape_wrape">
-                                <div class="circle_text">
-                                    <div class="text_inner">
-                                        <img src="assets/img/shape/9.webp" alt="shape" loading="lazy" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner -->
-    <!-- Start Services
-    ============================================= -->
-    <div id="services" class="services-style-one-area box-layout default-padding bottom-less bg-light">
-        <div class="blur-bg"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">My Expertise</h4>
-                        <h2 class="title">What I Do </h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Single Item -->
-                <div class="service-style-one col-lg-4 col-md-6">
-                    <div class="service-style-one-item">
-                        <img src="assets/img/icon/laravel.png" alt="Icon">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Laravel</a></h4>
-                        <p>
-                            routing, middleware, Eloquent ORM, Blade templating engine, service providers, dependency
-                            injection, authentication and authorization, Artisan CLI, request lifecycle, caching,
-                            queues, events and listeners, task scheduling, database migrations, validation, file
-                            storage, and API development..
-                        </p>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="service-style-one col-lg-4 col-md-6">
-                    <div class="service-style-one-item">
-                        <img src="assets/img/icon/React.webp" alt="Icon">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">React</a></h4>
-                        <p>
-                            Components, JSX, Props, State, Lifecycle Methods, Hooks, Virtual DOM, Event Handling,
-                            Conditional Rendering, Lists and Keys, Forms, Context API, Higher-Order Components, Error
-                            Boundaries, Portals, Code Splitting, React Router, Redux.
-                        </p>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="service-style-one col-lg-4 col-md-6">
-                    <div class="service-style-one-item">
-                        <img src="assets/img/expertise/wordpress.webp" alt="Icon">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Wordpress
-                            </a></h4>
-                        <p>
-                            Themes, Plugins, Posts, Pages, Widgets, Customizer, Gutenberg Editor, Shortcodes, Taxonomies
-                            (Categories and Tags), Media Library, Permalinks, Menus, User Roles and Permissions,
-                            Multisite, REST API, Security, SEO, Backups, Updates, Custom Post Types, Custom Fields.
-                        </p>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-            </div>
-        </div>
-    </div>
-    <!-- End Services -->
-    <!-- Start Portfolio 
-    ============================================= -->
-    <div id="portfolio" class="portfolio-style-six-area default-padding-top">
-        <div class="shape-animated-right">
-            <img src="assets/img/shape/1-light.png" alt="Shape">
-        </div>
-        <div class="container">
-            <div class="heading-left">
-                <div class="row align-center">
-                    <div class="col-lg-5">
-                        <div class="left-info">
-                            <h5 class="sub-title">Portfolio</h5>
-                            <h2 class="title">Latest Projects</h2>
-                            <div class="heading-shape">
-                                <img src="assets/img/shape/10.png" alt="Shape">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <div class="right-info">
-                            <div class="fun-factor-default">
-                                <div class="fun-fact">
-                                    <div class="counter">
-                                        <div class="timer" data-to="20" data-speed="2000">20</div>
-                                        <div class="operator"></div>
-                                    </div>
-                                    <span class="medium">Completed Projects</span>
-                                </div>
-                                <div class="fun-fact">
-                                    <div class="counter">
-                                        <div class="timer" data-to="70" data-speed="2000">80</div>
-                                        <div class="operator">%</div>
-                                    </div>
-                                    <span class="medium">Positive Rating</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-left mb-4">
-                    <button class="btn btn-primary btn-sm circle mb-1" style="padding: 10px 20px !important;"
-                        onclick="filterPortfolio('all')">Show All</button>
-                    <button class="btn btn-primary btn-sm circle mb-1" style="padding: 10px 20px !important;"
-                        onclick="filterPortfolio('web_applications')">Web Applications</button>
-                    <button class="btn btn-primary btn-sm circle mb-1" style="padding: 10px 20px !important;"
-                        onclick="filterPortfolio('websites')">Websites</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 gallery-content mb--15">
-                    <div class="magnific-mix-gallery masonary">
-                        <div id="portfolio-grid" class="gallery-items">
-                            <div class="row px-3">
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="web_applications">
-                                    <a href="https://gfs.junaid.live" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/web_applications/work1 - gfs.png"
-                                                alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span><i class="fa fa-globe" aria-hidden="true"></i>
-                                                        Laravel</span>
-                                                    <h5><a href="https://gfs.junaid.live" target="_blank">GFS Point of
-                                                            Sale</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="web_applications">
-                                    <a href="https://aisp.junaid.live" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/web_applications/work2 - aisp.png"
-                                                alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span><i class="fa fa-globe" aria-hidden="true"></i>
-                                                        Laravel</span>
-                                                    <h5><a href="https://aisp.junaid.live" target="_blank">Americal
-                                                            Institute of Safety Professionals</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="web_applications">
-                                    <a href="https://sindhhec.junaid.live" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/web_applications/work3 - sindhhec.png"
-                                                alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span><i class="fa fa-globe" aria-hidden="true"></i>
-                                                        Laravel</span>
-                                                    <h5><a href="https://sindhhec.junaid.live/login"
-                                                            target="_blank">Sindh HEC Job Portal</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://regalmediapress.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work1- regal.webp" alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span><i class="fa fa-wordpress"></i> Wordpress</span>
-                                                    <h5><a href="https://regalmediapress.com" target="_blank">Regal
-                                                            Media Press</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://villagedukaan.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work2 - VillageDukaan.webp" alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span> <i class="fa fa-globe"></i> React</span>
-                                                    <h5><a href="https://villagedukaan.com" target="_blank">Village
-                                                            Dukaan</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://onlinecourseexperts.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work3 - onlinecourseexperts.webp"
-                                                alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span>Onlinecourseexperts</span>
-                                                    <h5><a href="https://onlinecourseexperts.com"
-                                                            target="_blank">Full-Stack
-                                                            Project</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://helpwithmyonlineclass.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work4 - helpwithmyonlineclass.webp"
-                                                alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span>HTML CSS</span>
-                                                    <h5><a href="https://helpwithmyonlineclass.com"
-                                                            target="_blank">Online Classes Help<a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://socialendpoint.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work5 - socialendpoint.webp" alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span>Digital Marketing</span>
-                                                    <h5><a href="https://socialendpoint.com" target="_blank">Full-Stack
-                                                            Project</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://granuleservices.com" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work6 - granuleservices.webp" alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span>Granule Services</span>
-                                                    <h5><a href="https://granuleservices.com" target="_blank">Full-Stack
-                                                            Project</a></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 py-2 pf-item" data-category="websites">
-                                    <a href="https://socialendpoint.com/Portfolio/GAMINGWORLD" target="_blank">
-                                        <div class="overlay-content">
-                                            <img src="assets/img/portfolio/work 7 - gamingchair.webp" alt="thumb">
-                                            <div class="content">
-                                                <div class="title">
-                                                    <span>Product Designing</span>
-                                                    <h5><a href="https://socialendpoint.com/Portfolio/GAMINGWORLD"
-                                                            target="_blank">Wordpress
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Projects Single Modal -->
-        <div class="modal fade" id="projectSingleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="project-details-items">
-                            <div class="top-info">
-                                <div class="row">
-                                    <div class="col-xl-12 left-info">
-                                        <div class="project-info mt-md-50 mt-xs-40 mb-40">
-                                            <div class="content">
-                                                <ul class="project-basic-info">
-                                                    <li>
-                                                        Client <span>validthemes</span>
-                                                    </li>
-                                                    <li>
-                                                        Project Type <span>Website Growth</span>
-                                                    </li>
-                                                    <li>
-                                                        Date <span>25 February, 2023</span>
-                                                    </li>
-                                                    <li>
-                                                        Address <span>New York United state</span>
-                                                    </li>
-                                                </ul>
-                                                <ul class="social">
-                                                    <li>
-                                                        <h4>Share:</h4>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Projects Single Modal -->
-    </div>
-    <!-- End Portfolio -->
-    <!-- Start Resume 
-    ============================================= -->
-    <div id="resume" class="resume-area default-padding-top">
-        <div class="container">
-            <div class="experience-content-box">
-                <div class="row">
-                    <div class="col-xl-10 offset-xl-1">
-                        <div class="nav nav-tabs text-center resume-tab-navs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1"
-                                type="button" role="tab" aria-controls="tab1" aria-selected="true">
-                                Skills <strong>1</strong>
-                            </button>
-                            <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2"
-                                type="button" role="tab" aria-controls="tab2" aria-selected="false">
-                                Biography <strong>2</strong>
-                            </button>
-                            <button class="nav-link" id="nav-id-3" data-bs-toggle="tab" data-bs-target="#tab3"
-                                type="button" role="tab" aria-controls="tab3" aria-selected="false">
-                                Education <strong>3</strong>
-                            </button>
-                        </div>
-                        <div class="tab-content resume-tab-content" id="nav-tabContent">
-                            <!-- Single Item -->
-                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
-                                <div class="row align-center">
-                                    <div class="col-lg-12">
-                                        <ul class="skill-table">
-                                            <li>
-                                                <div class="row align-center">
-                                                    <div class="col-lg-2">
-                                                        <div class="icon">
-                                                            <img src="/assets/img/icon/laravel.png" style="width: 100px;" alt="">
-                                                            <!-- <i class="fa fa-code" aria-hidden="true"></i> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <h4>Laravel for backend</h4>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <div class="progress-box">
-                                                            <h5>80%</h5>
-                                                            <div class="progress">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                    data-width="80"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-center">
-                                                    <div class="col-lg-2">
-                                                        <div class="icon">
-                                                            <!-- <i class="fa fa-coffee"></i> -->
-                                                            <img src="/assets/img/icon/React.webp" style="width: 100px;"  alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <h4>React for frontend</h4>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <div class="progress-box">
-                                                            <h5>70%</h5>
-                                                            <div class="progress">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                    data-width="70"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-center">
-                                                    <div class="col-lg-2">
-                                                        <div class="icon">
-                                                            <!-- <i class="fa fa-laptop"></i> -->
-                                                            <img src="/assets/img/icon/git.png" style="width: 100px;"  alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <h4>Git, Github, Docker</h4>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <div class="progress-box">
-                                                            <h5>70%</h5>
-                                                            <div class="progress">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                    data-width="70"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-center">
-                                                    <div class="col-lg-2">
-                                                        <div class="icon">
-                                                            <!-- <i class="fa fa-database"></i> -->
-                                                            <img src="/assets/img/icon/mysql.png" style="width: 100px;"  alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <h4>Mysql, Postgres, SqLite for databases</h4>
-                                                    </div>
-                                                    <div class="col-lg-5">
-                                                        <div class="progress-box">
-                                                            <h5>60%</h5>
-                                                            <div class="progress">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                    data-width="60"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="tab-pane fade " id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <ul class="biography-table">
-                                            <li>
-                                                <h5>Name</h5>
-                                                <p>
-                                                    Junaid Ali
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>Birthday</h5>
-                                                <p>
-                                                    26 June 2002
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>Age</h5>
-                                                <p>
-                                                    23
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>Address</h5>
-                                                <p>
-                                                    Karachi Sindhi Pakistan
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>Email</h5>
-                                                <p>
-                                                    engrjunaidali0@gmail.com
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>linkedin</h5>
-                                                <p>
-                                                    <a href="https://www.linkedin.com/in/junaidali113/"
-                                                        target="_blank">Junaid Ali</a>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <h5>Freelance</h5>
-                                                <p>
-                                                    Available
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-id-3">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12">
-                                        <ul class="education-table">
-                                            <li>
-                                                <h4>MS in Computer Science</h4>
-                                                <h5 style="text-transform: uppercase;">IBA University, Sukkur
-                                                </h5>
-                                                <span>2025 - Present</span>
-                                                <p>
-                                                    I am currently pursuing my Master of Science in Computer Science at IBA University, Sukkur. This program is designed to deepen my understanding of advanced computing concepts and equip me with cutting-edge skills in areas such as software engineering, artificial intelligence, and data science. Building on the strong foundation I developed during my undergraduate studies, I aim to further enhance my expertise to contribute effectively to the tech industry and academic research.
-                                                </p>
-                                            </li>
-                                            <!---BSC DEGREE-->
-                                            <li>
-                                                <h4>BS in Computer Science</h4>
-                                                <h5 style="text-transform: uppercase;">NED University, Karachi
-                                                </h5>
-                                                <span>2019 - 2023</span>
-                                                <p>
-                                                    Alhamdulillah! completed my graduation in the Computer Science
-                                                    program at NED University in Karachi, where I studied from 2019
-                                                    onwards. My coursework covered a variety of subjects in computer
-                                                    science, equipping me with essential skills and knowledge for a
-                                                    career in technology.
-                                                </p>
-                                            </li>
-                                            <!---BSC DRGREE-->
-                                            <!---INTERMEDATE-->
-                                            <li>
-                                                <h4 style="text-transform: uppercase;">Intermediate</h4>
-                                                <h5>Government Boys Degree College Sukkur</h5>
-                                                <span>2017 - 2019</span>
-                                                <p>
-                                                    Attended Government Boys Degree College Sukkur from 2017 to 2019,
-                                                    where I focused on mathematics and computer science. This
-                                                    foundational education significantly contributed to my academic and
-                                                    personal growth, laying the groundwork for my future endeavors.
-                                                </p>
-                                            </li>
-                                            <!---INTERMEDATE-->
-                                            <!---INTERMEDATE-->
-                                            <li>
-                                                <h4 style="text-transform: uppercase;">Matric</h4>
-                                                <h5>The Smart School, Zulaikha Campus, Sukkur</h5>
-                                                <span>2015 - 2017</span>
-                                                <p>
-                                                    attended The Smart School, Zulaikha Campus, Sukkur, from 2015 to
-                                                    2017 for my Matriculation. This period provided me with a strong
-                                                    educational foundation, emphasizing essential skills and knowledge
-                                                    that have been instrumental in shaping my academic journey.
-                                                </p>
-                                            </li>
-                                            <!---INTERMEDATE-->
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Resume -->
-    <!-- Start Pricing 
-    ============================================= -->
-    <div id="pricing" class="pricing-area default-padding-top">
-        <div class="container">
-            <div class="pricing-box">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="heading-left">
-                            <div class="left-info">
-                                <h5 class="sub-title">experience</h5>
-                                <h2 class="title">My Experience<br> In Web Development </h2>
-                                <p>
-                                    So far, I have gained a lot of experience in web development. I have worked on
-                                    numerous new and old projects, imparting a deep understanding of web development.
-                                    Through my experience, I have contributed significantly to various projects, both
-                                    new and existing ones, and successfully completed them.</p>
-                                <div class="heading-shape">
-                                    <img src="assets/img/shape/10.png" alt="Shape">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="save-ammoun mt-100 mt-md-50">
-                            <div class="img_farme">
-                                <div class="mocup_text">
-                                    <h3>FOR MORE INFORMACTION ABOUT ME Please</h3>
-                                    <div class="contact_me_btn">
-                                        <a href="#contact"><button class="redmore-btn">Contact</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <div class="pricing-style-one">
-                            <div class="my_exprince_wrapper">
-                                <div class="cupmnay_name_work">
-                                    <h3>Ken Duit<h3>
-                                            <h4>Software Engineer</h4>
-                                            <div class="exprince_time">
-                                                <h5>July 2024 - Present</h5>
-                                            </div>
-                                </div>
-                                <div class="logo_wrapper_cum">
-                                    <a href="https://www.linkedin.com/company/kenduit/" target="_blank"><img
-                                            src="assets/img/icon/kenduit-removebg-preview.png" alt="kenduit" loading="lazy" /></a>
-                                </div>
-                            </div>
-                            <div class="text-despaction_col">
-                                <p class="description">As a full stack developer at Ken Duit,</p>
-                                <p class="moretext">
-                                    🚀 Building and maintaining software with PHP, Laravel, WordPress, and React.js to enhance user experiences.
-                                </p>
-                                <button class="redmore-btn moreless-button">Read more</button>
-                            </div>
-                        </div>
-                        <div class="pricing-style-one">
-                            <div class="my_exprince_wrapper">
-                                <div class="cupmnay_name_work">
-                                    <h3>Apptycoons<h3>
-                                            <h4>Full Stack Developer</h4>
-                                            <div class="exprince_time">
-                                                <h5>Apr 2023 - June 2024</h5>
-                                            </div>
-                                </div>
-                                <div class="logo_wrapper_cum">
-                                    <a href="https://www.linkedin.com/company/apptycoons/" target="_blank"><img
-                                            src="assets/img/icon/apptycoons.png" alt="Apptycoons" loading="lazy" /></a>
-                                </div>
-                            </div>
-                            <div class="text-despaction_col">
-                                <p class="description">As a full stack developer at Apptycoons,</p>
-                                <p class="moretext2">
-                                    🚀 Led MLM software development with Laravel & React, boosting user satisfaction. <br>
-                                    🚀 Integrated & tested APIs with Postman to enhance mobile app functionality. <br>
-                                    🚀 Built React-Express apps with Prisma & PostgreSQL for seamless performance. <br>
-                                    🚀 Documented APIs using Swagger for developer clarity. <br>
-                                    🚀 Developed an AI app with Next.js for efficient data handling. <br>
-                                    🚀 Designed an eCommerce system with Stripe, Laravel, and MySQL to drive sales. <br>
-                                    🚀 Created Shopify sites with product uploads & customization. <br>
-                                    🚀 Built a custom CMS for schools with SEO & responsive design. <br>
-                                    🚀 Developed and optimized CMS solutions using PHP, Laravel, & WordPress. <br>
-                                    🚀 Refactored PHP websites to improve speed and user experience.
-                                </p>
-                                <button class="redmore-btn moreless-button2">Read more</button>
-                            </div>
-                        </div>
-                        <div class="pricing-style-one">
-                            <div class="my_exprince_wrapper">
-                                <div class="cupmnay_name_work">
-                                    <h3>NCCS NED<h3>
-                                            <h4>Web Developer Internee</h4>
-                                            <div class="exprince_time">
-                                                <h5>Oct 2021 - Oct 2022</h5>
-                                            </div>
-                                </div>
-                                <div class="logo_wrapper_cum">
-                                    <a href="https://nccs.neduet.edu.pk/" target="_blank"><img
-                                            src="assets/img/icon/nccs.png" alt="nccs" style="object-fit: contain;"
-                                            loading="lazy" /></a>
-                                </div>
-                            </div>
-                            <div class="text-despaction_col">
-                                <p class="description">As a Jr web developer, I bring a wealth of experience</p>
-                                <p class="moretext3">
-                                    🚀 Built a scalable Rental System with Laravel Voyager & Wave for efficient property management. <br>
-                                    🚀 Integrated real-time chat in university and board portals using Chatify & Pusher API. <br>
-                                    🚀 Developed a Job Portal for HEC, streamlining recruitment and candidate matching.
-                                </p>
-                                <button class="redmore-btn moreless-button3">Read more</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <!-- End Pricing Area -->
-    </div>
-    </div>
-    </div>
-    <!-- End Brand -->
-    <!-- Start Testimonials 
-    ============================================= -->
-    <div id="testinomials" class="testimonial-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">Feedbacks</h4>
-                        <h2 class="title">Clients Testimonials</h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="testimonial-style-one-box text-center">
-                <div class="row align-center">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="testimonial-style-one-carousel swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Single item -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-one">
-                                        <div class="item">
-                                            <!-- <div class="thumb">
-                                                <img src="assets/img/testimonials/1.webp" alt="Thumb">
-                                                <div class="shape">
-                                                    <img src="assets/img/shape/15.png" alt="Shape">
-                                                </div>
-                                            </div> -->
-                                            <div class="content">
-                                                <p>
-                                                    🌟 Working with Junaid A. was an absolute pleasure! ⭐️⭐️⭐️⭐️⭐️ Thank
-                                                    you, for transforming my website and taking my online presence to
-                                                    the next level! I'm thrilled with the outcome! 🌟 100%
-                                                    recommended... ✔
-                                                </p>
-                                            </div>
-                                            <div class="provider">
-                                                <div class="info">
-                                                    <h4>Naji Ali</h4>
-                                                    <span>Senior Consultant</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single item -->
-                                <!-- Single item -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-one">
-                                        <div class="item">
-                                            <!-- <div class="thumb">
-                                                <img src="assets/img/testimonials/2.webp" alt="Thumb">
-                                                <div class="shape">
-                                                    <img src="assets/img/shape/15.png" alt="Shape">
-                                                </div>
-                                            </div> -->
-                                            <div class="content">
-                                                <p>
-                                                    I had the pleasure of working with Junaid on a Personal Health
-                                                    Record project. His deep understanding of Laravel and PHP allowed
-                                                    him to create an efficient and scalable solution. I highly recommend
-                                                    Junaid! 👍🏼✨
-                                                </p>
-                                            </div>
-                                            <div class="provider">
-                                                <div class="info">
-                                                    <h4>Umair Farooque</h4>
-                                                    <span>Data Analyst</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single item -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonails Area -->
-    <!-- Start Available 
-    ============================================= -->
-    <div class="work-available-area text-center box-layout bg-light default-padding">
-        <div class="shape-right-top-mini">
-            <img src="assets/img/shape/16-light.png" alt="illustration">
-        </div>
-        <div class="shape-illustration">
-            <img src="assets/img/illustration/2.webp" alt="illustration">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="work-available">
-                        <h2 class="title">I'm <strong>available</strong> for <br> freelance work</h2>
-                        <a class="btn btn-md circle btn-theme smooth-menu" href="#contact">Hire me now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Available -->
-    <!-- Start Contact Area 
-    ============================================= -->
-    <div id="contact" class="contact-area shape-less default-padding overflow-hidden">
-        <h2 class="text-shade">Contact</h2>
-        <div class="container">
-            <div class="contact-content">
-                <div class="row align-center">
-                    <div class="col-lg-7 contact-form-box mb-md-50 mb-xs-50">
-                        <div class="form-box">
-                            <h2>Let's talk?</h2>
-                            <p>
-                                You can contact me by filling out the form, and I will respond to you promptly..
-                            </p>
-                            <div class="alert alert-danger" role="alert" id="errmassge">
-                                All input fields are required.
-                            </div>
-                            <div class="sucessMessage" id="succseTabe">
-                                <div class="sucessWrapper">
-                                    <h4><span><i class="fa fa-check" aria-hidden="true"></i></span>successfully submited
-                                    </h4>
-                                    <p>thank you&nbsp;<span id="vistrName"></span> &nbsp; for reaching out. I will
-                                        contact you very soon</p>
-                                </div>
-                                <div class="sucessWrapper">
-                                    <span id="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                </div>
-                            </div>
-                            <form action="#" method="POST" class="contact-form">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <input class="form-control" id="name" name="name" placeholder="Name"
-                                                type="text" required>
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="email" name="email" placeholder="Email*"
-                                                type="email" required>
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
-                                                type="text" required>
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group comments">
-                                            <textarea class="form-control" id="comments" name="comments"
-                                                placeholder="Your Message..." required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <button type="submit" name="submit" id="submit">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-1 info">
-                        <div class="content">
-                            <ul>
-                                <li class="contact-info-list wow fadeInUp">
-                                    <div class="icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <div class="info">
-                                        <p>Emails</p>
-                                        <h5>
-                                            <a href="mailto:engrjunaidali0@gmail.com">engrjunaidali0@gmail.com</a>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li class="contact-info-list wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="icon">
-                                        <i class="fa fa-map-marker"></i>
-                                    </div>
-                                    <div class="info">
-                                        <p>Address</p>
-                                        <h5>
-                                            Karachi Sindh<br> Pakistan
-                                        </h5>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact Area -->
-    <!-- Start Footer 
-    ============================================= -->
-    <footer class="bg-dark text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="footer-social">
-                        <li class="facebook">
-                            <a href="https://www.linkedin.com/in/junaidali113">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="behance">
-                            <a href="https://wa.me/923133533027" target="_blank">
-                                <i class="fa fa-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li class="dribbble">
-                            <a href="https://github.com/engrjunaidali">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 text-end">
-                    <p>&copy; 2024 All Right Junaid Ali Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-    <!-- jQuery Frameworks
-    ============================================= -->
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/jquery.appear.min.js"></script>
-    <script src="/assets/js/jquery.easing.min.js"></script>
-    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="/assets/js/modernizr.custom.13711.js"></script>
-    <script src="/assets/js/swiper-bundle.min.js"></script>
-    <script src="/assets/js/wow.min.js"></script>
-    <script src="/assets/js/progress-bar.min.js"></script>
-    <script src="/assets/js/circle-progress.js"></script>
-    <script src="/assets/js/isotope.pkgd.min.js"></script>
-    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/assets/js/jquery.nice-select.min.js"></script>
-    <script src="/assets/js/count-to.js"></script>
-    <script src="/assets/js/jquery.scrolla.min.js"></script>
-    <script src="/assets/js/YTPlayer.min.js"></script>
-    <script src="/assets/js/TweenMax.min.js"></script>
-    <script src="/assets/js/typed.js"></script>
-    <script src="/assets/js/validnavs.min.js"></script>
-    <script src="/assets/js/main.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/assets/js/from.js"></script>
-    <script src="/assets/js/custom.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
