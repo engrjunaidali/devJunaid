@@ -385,21 +385,21 @@
           </div>
           <!-- Add LightGallery container -->
           <ul id="lightgallery" class="project-list">
-            <li class="project-item active" data-src="./assets/images/portfolio/work1- regal.webp" data-filter-item data-category="web design">
-              <a href="./assets/images/portfolio/work1- regal.webp"
-                data-src="./assets/images/portfolio/work1- regal.webp">
+            <li class="project-item active no-lightgallery" data-url="https://www.regalmediapress.com/" data-filter-item
+              data-category="web design">
+              <a href="javascript:void(0);" onclick="openIframe('https://www.regalmediapress.com/')">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/portfolio/work1- regal.webp" alt="fundo">
+                  <img src="./assets/images/portfolio/work1- regal.webp" alt="Regal" loading="lazy">
                 </figure>
                 <h3 class="project-title">Regal</h3>
                 <p class="project-category">Web Design</p>
               </a>
             </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/work2 - VillageDukaan.webp" data-filter-item data-category="web design">
-              <a href="./assets/images/portfolio/work2 - VillageDukaan.webp">
+            <li class="project-item active no-lightgallery" data-url="https://villagedukaan.com/" data-filter-item data-category="web design">
+              <a href="javascript:void(0);" onclick="openIframe('https://villagedukaan.com/')">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -410,7 +410,8 @@
                 <p class="project-category">Web Design</p>
               </a>
             </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/work7 - gamingchair.webp" data-filter-item data-category="web design">
+            <li class="project-item active" data-src="./assets/images/portfolio/work7 - gamingchair.webp"
+              data-filter-item data-category="web design">
               <a href="./assets/images/portfolio/work7 - gamingchair.webp">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -422,7 +423,8 @@
                 <p class="project-category">Web Design</p>
               </a>
             </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work1 - gfs.png" data-filter-item data-category="web development">
+            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work1 - gfs.png"
+              data-filter-item data-category="web development">
               <a href="./assets/images/portfolio/web_applications/work1 - gfs.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -434,7 +436,8 @@
                 <p class="project-category">Web development</p>
               </a>
             </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.png" data-filter-item data-category="web development">
+            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.png"
+              data-filter-item data-category="web development">
               <a href="./assets/images/portfolio/web_applications/work2 - aisp.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -447,7 +450,8 @@
                 <p class="project-category">Web development</p>
               </a>
             </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.png" data-filter-item data-category="web development">
+            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.png"
+              data-filter-item data-category="web development">
               <a href="./assets/images/portfolio/web_applications/work3 - sindhhec.png">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -461,6 +465,17 @@
               </a>
             </li>
           </ul>
+
+          <!-- Modal for iframe -->
+          <div id="iframeModal"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; overflow: hidden;">
+            <div
+              style="position: relative; width: 100%; height: 100%; background: #fff; border-radius: 8px; overflow: hidden;">
+              <button onclick="closeIframe()"
+                style="position: absolute; top: 10px; right: 10px; background: #ff5f5f; color: #fff; border: none; padding: 10px; cursor: pointer;">Close</button>
+              <iframe id="iframeContent" src="" style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+            </div>
+          </div>
         </section>
       </article>
       <article class="contact" data-page="contact">
@@ -502,11 +517,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     lightGallery(document.getElementById('lightgallery'), {
-      selector: '.project-item',
+      selector: '.project-item:not(.no-lightgallery)', // Exclude items with the "no-lightgallery" class
       thumbnail: true,
       plugins: [lgThumbnail, lgZoom],
       speed: 500,
     });
+
+    function openIframe(url) {
+      const iframeModal = document.getElementById('iframeModal');
+      const iframeContent = document.getElementById('iframeContent');
+      iframeContent.src = url;
+      iframeModal.style.display = 'block';
+    }
+
+    function closeIframe() {
+      const iframeModal = document.getElementById('iframeModal');
+      const iframeContent = document.getElementById('iframeContent');
+      iframeContent.src = ''; // Clear the iframe content
+      iframeModal.style.display = 'none';
+    }
   </script>
 </body>
 
