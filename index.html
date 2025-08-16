@@ -510,7 +510,34 @@
                        justify-content: center;
                        width: 40px;
                        height: 40px;
-                       line-height: 1;">×</button>
+                       line-height: 1;
+                       z-index: 1001;">×</button>
+              
+              <!-- Loading overlay -->
+              <div id="iframeLoader" style="position: absolute;
+                                          top: 0;
+                                          left: 0;
+                                          width: 100%;
+                                          height: 100%;
+                                          background: #fff;
+                                          display: flex;
+                                          flex-direction: column;
+                                          align-items: center;
+                                          justify-content: center;
+                                          z-index: 1000;">
+                <div style="width: 50px;
+                           height: 50px;
+                           border: 4px solid #f3f3f3;
+                           border-top: 4px solid hsl(0, 0%, 22%);
+                           border-radius: 50%;
+                           animation: spin 1s linear infinite;
+                           margin-bottom: 20px;"></div>
+                <p style="color: #666;
+                         font-family: 'Poppins', sans-serif;
+                         font-size: 16px;
+                         margin: 0;">Please wait, website is loading...</p>
+              </div>
+              
               <iframe id="iframeContent" src=""
                 style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
             </div>
@@ -544,6 +571,12 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
   <!-- Dynamic script loading -->
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
   <script>
     // Register service worker
     if ('serviceWorker' in navigator) {
@@ -610,14 +643,33 @@
     function openIframe(url) {
       const iframeModal = document.getElementById('iframeModal');
       const iframeContent = document.getElementById('iframeContent');
-      iframeContent.src = url;
+      const iframeLoader = document.getElementById('iframeLoader');
+      
+      // Show modal and loader
       iframeModal.style.display = 'block';
+      iframeLoader.style.display = 'flex';
+      
+      // Set iframe source
+      iframeContent.src = url;
+      
+      // Hide loader when iframe loads
+      iframeContent.onload = function() {
+        iframeLoader.style.display = 'none';
+      };
+      
+      // Also hide loader after a timeout as fallback
+      setTimeout(function() {
+        iframeLoader.style.display = 'none';
+      }, 10000); // 10 seconds timeout
     }
     function closeIframe() {
       const iframeModal = document.getElementById('iframeModal');
       const iframeContent = document.getElementById('iframeContent');
+      const iframeLoader = document.getElementById('iframeLoader');
+      
       iframeContent.src = ''; // Clear the iframe content
       iframeModal.style.display = 'none';
+      iframeLoader.style.display = 'flex'; // Reset loader for next use
     }
   </script>
   <script>
