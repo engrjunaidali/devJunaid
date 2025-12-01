@@ -369,7 +369,7 @@
           <ul id="lightgallery" class="project-list">
             <li class="project-item active no-lightgallery" data-url="https://www.regalmediapress.com/" data-filter-item
               data-category="web designs">
-              <a href="javascript:void(0);" onclick="openIframe('https://www.regalmediapress.com/')">
+              <a href="https://www.regalmediapress.com/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -382,7 +382,7 @@
             </li>
             <li class="project-item active no-lightgallery" data-url="https://villagedukaan.com/" data-filter-item
               data-category="web designs">
-              <a href="javascript:void(0);" onclick="openIframe('https://villagedukaan.com/')">
+              <a href="https://villagedukaan.com/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -398,7 +398,7 @@
 
             <li class="project-item active no-lightgallery" data-url="https://www.kenduit.com/" data-filter-item
               data-category="web apps">
-              <a href="javascript:void(0);" onclick="openIframe('https://www.kenduit.com/')">
+              <a href="https://www.kenduit.com/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -457,7 +457,7 @@
             
             <li class="project-item active no-lightgallery" data-url="https://punjabimasala.se/home" data-filter-item
               data-category="web apps">
-              <a href="javascript:void(0);" onclick="openIframe('https://punjabimasala.se/home')">
+              <a href="https://punjabimasala.se/home" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -470,63 +470,6 @@
             </li>
 
           </ul>
-          <!-- Modal for iframe -->
-          <div id="iframeModal"
-            style="display: none; position: fixed; top: 2.5%; left: 2.5%; width: 95%;
-    height: 95%; background: rgba(0, 0, 0, 0.8); z-index: 1000; overflow: hidden;">
-            <div
-              style="position: relative; width: 100%; height: 100%; background: #fff; border-radius: 8px; overflow: hidden;">
-              <button onclick="closeIframe()" 
-                style="position: absolute;
-                       top: 20px;
-                       right: 20px;
-                       background: #e74c3c;
-                       color: #fff;
-                       border: none;
-                       padding: 12px 15px;
-                       cursor: pointer;
-                       border-radius: 50%;
-                       font-size: 18px;
-                       font-weight: bold;
-                       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-                       transition: all 0.3s ease;
-                       display: flex;
-                       align-items: center;
-                       justify-content: center;
-                       width: 40px;
-                       height: 40px;
-                       line-height: 1;
-                       z-index: 1001;">×</button>
-              
-              <!-- Loading overlay -->
-              <div id="iframeLoader" style="position: absolute;
-                                          top: 0;
-                                          left: 0;
-                                          width: 100%;
-                                          height: 100%;
-                                          background: #fff;
-                                          display: flex;
-                                          flex-direction: column;
-                                          align-items: center;
-                                          justify-content: center;
-                                          z-index: 1000;">
-                <div style="width: 50px;
-                           height: 50px;
-                           border: 4px solid #f3f3f3;
-                           border-top: 4px solid hsl(0, 0%, 22%);
-                           border-radius: 50%;
-                           animation: spin 1s linear infinite;
-                           margin-bottom: 20px;"></div>
-                <p style="color: #666;
-                         font-family: 'Poppins', sans-serif;
-                         font-size: 16px;
-                         margin: 0;">Please wait, website is loading...</p>
-              </div>
-              
-              <iframe id="iframeContent" src=""
-                style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
-            </div>
-          </div>
         </section>
       </article>
       <article class="contact" data-page="contact">
@@ -556,12 +499,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
   <!-- Dynamic script loading -->
-  <style>
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+
   <script>
     // Register service worker
     if ('serviceWorker' in navigator) {
@@ -618,45 +556,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js"
     integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    // lightGallery(document.getElementById('lightgallery'), {
-    //   selector: '.project-item:not(.no-lightgallery)', // Exclude items with the "no-lightgallery" class
-    //   thumbnail: true,
-    //   plugins: [lgThumbnail, lgZoom],
-    //   speed: 500,
-    // });
-    function openIframe(url) {
-      const iframeModal = document.getElementById('iframeModal');
-      const iframeContent = document.getElementById('iframeContent');
-      const iframeLoader = document.getElementById('iframeLoader');
-      
-      // Show modal and loader
-      iframeModal.style.display = 'block';
-      iframeLoader.style.display = 'flex';
-      
-      // Set iframe source
-      iframeContent.src = url;
-      
-      // Hide loader when iframe loads
-      iframeContent.onload = function() {
-        iframeLoader.style.display = 'none';
-      };
-      
-      // Also hide loader after a timeout as fallback
-      setTimeout(function() {
-        iframeLoader.style.display = 'none';
-      }, 10000); // 10 seconds timeout
-    }
-    function closeIframe() {
-      const iframeModal = document.getElementById('iframeModal');
-      const iframeContent = document.getElementById('iframeContent');
-      const iframeLoader = document.getElementById('iframeLoader');
-      
-      iframeContent.src = ''; // Clear the iframe content
-      iframeModal.style.display = 'none';
-      iframeLoader.style.display = 'flex'; // Reset loader for next use
-    }
-  </script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const contactForm = document.getElementById('contactForm');
