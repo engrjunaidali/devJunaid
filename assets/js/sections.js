@@ -28,7 +28,6 @@ async function initializeSections() {
     // Re-initialize event listeners and functionality
     setupNavigation();
     initializeContactForm();
-    // initializeLightGallery();
 
     // Initialize animations
     animateOnScroll();

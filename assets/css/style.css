@@ -316,7 +316,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 158px;
+  max-height: 220px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -326,20 +326,27 @@ main {
 .sidebar-info {
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
+  gap: 12px;
+  text-align: center;
 }
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
   flex-shrink: 0;
+  margin-inline: auto;
 }
 
 .info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   min-width: 0;
-  flex: 1;
+  flex: none;
 }
 .avatar-box img {
   border-radius: 25px;
@@ -351,6 +358,7 @@ main {
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .info-content .title {
@@ -361,6 +369,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  margin-inline: auto;
 }
 
 .availability-badge {
@@ -1796,13 +1805,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 196px;
+    max-height: 260px;
     margin-bottom: 30px;
   }
 
   .sidebar.active { max-height: 584px; }
 
-  .sidebar-info { gap: 25px; }
+  .sidebar-info { gap: 16px; }
 
   .availability-badge {
     font-size: 11px;
@@ -2371,7 +2380,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     z-index: 1;
   }
 
-  .sidebar-info { flex-direction: column; }
+  .sidebar-info { flex-direction: column; align-items: center; }
+
+  .avatar-box { margin-inline: auto; }
 
   .avatar-box img { width: 150px; border-radius: 25px; }
 
