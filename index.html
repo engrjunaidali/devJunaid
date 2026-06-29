@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junaid Ali - Porfolio</title>
+  <title>Junaid Ali - Portfolio</title>
   <link rel="shortcut icon" href="./assets/images/avatar.webp" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,6 +68,16 @@
           </li>
           <li class="contact-item">
             <div class="icon-box">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">WhatsApp</p>
+              <a href="#" id="whatsappSidebarLink" class="contact-link" target="_blank"
+                rel="noopener noreferrer">+92 313 3533027</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
             <div class="contact-info">
@@ -113,10 +123,6 @@
           </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
           </li>
         </ul>
       </nav>
@@ -485,14 +491,21 @@
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <span>Send on WhatsApp</span>
             </button>
           </form>
         </section>
       </article>
     </div>
-  </main> <!-- Defer main script -->
+  </main>
+
+  <a id="whatsappFab" class="whatsapp-fab" href="#" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </a>
+
+  <!-- Defer main script -->
   <script defer src="./assets/js/script.js"></script>
   <script defer src="./assets/js/sections.js"></script>
   <!-- Load scripts asynchronously -->
@@ -558,9 +571,24 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const contactForm = document.getElementById('contactForm');
+    // International format: country code + number, no + or spaces (e.g. 923001234567)
+    const WHATSAPP_NUMBER = '923133533027';
+    const WHATSAPP_DEFAULT_MSG = "Hi Junaid, I found your portfolio and I'd like to discuss a project.";
 
+    function buildWhatsAppUrl(message) {
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const defaultUrl = buildWhatsAppUrl(WHATSAPP_DEFAULT_MSG);
+
+      const fab = document.getElementById('whatsappFab');
+      if (fab) fab.href = defaultUrl;
+
+      const sidebarLink = document.getElementById('whatsappSidebarLink');
+      if (sidebarLink) sidebarLink.href = defaultUrl;
+
+      const contactForm = document.getElementById('contactForm');
       contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -568,23 +596,16 @@
         const email = contactForm.querySelector('[name="email"]').value.trim();
         const message = contactForm.querySelector('[name="message"]').value.trim();
 
-        // Gmail URL with pre-filled values
-        const to = 'thejunaidali21@gmail.com';
-        const subject = 'Contact from Portfolio Website';
-        const body = `
-Hello Junaid,
+        const text = `Hi Junaid,
 
-Message from: ${name}
+I'm reaching out from your portfolio website.
+
+Name: ${name}
 Email: ${email}
 
-${message}
+${message}`.trim();
 
-Best regards,
-${name}
-        `.trim();
-
-        // Open Gmail compose window
-        window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(buildWhatsAppUrl(text), '_blank', 'noopener,noreferrer');
       });
     });
   </script>
