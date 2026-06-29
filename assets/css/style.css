@@ -495,6 +495,92 @@ main {
 
 
 /*-----------------------------------*\
+  #CTA BAR
+\*-----------------------------------*/
+
+.cta-bar {
+  margin-bottom: 15px;
+}
+
+.cta-bar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 18px;
+  border-radius: 14px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.cta-btn ion-icon { font-size: 18px; }
+
+.cta-btn--primary {
+  color: var(--smoky-black);
+  background: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-3);
+}
+
+.cta-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-4);
+}
+
+.cta-btn--secondary {
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  box-shadow: var(--shadow-2);
+}
+
+.cta-btn--secondary::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.cta-btn--secondary:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.cta-btn--secondary:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.cta-btn--ghost {
+  color: var(--light-gray);
+  background: transparent;
+  border: 1px solid var(--jet);
+}
+
+.cta-btn--ghost:hover {
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
+}
+
+
+
+
+
+/*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
@@ -1382,6 +1468,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { --fs-8: 14px; }
 
+  .cta-bar-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cta-btn {
+    flex: 1 1 calc(50% - 5px);
+    width: auto;
+  }
+
+  .cta-btn--primary { flex: 1 1 100%; }
+
 
 
   /**
@@ -1719,6 +1817,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-link { font-weight: var(--fw-500); }
+
+  .cta-bar {
+    margin-bottom: 25px;
+    padding-right: 220px;
+  }
+
+  .cta-bar-inner { flex-direction: row; }
+
+  .cta-btn {
+    flex: 1;
+    width: auto;
+  }
 
 
 
