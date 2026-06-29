@@ -11,15 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css"
-    integrity="sha512-QMCloGTsG2vNSnHcsxYTapI6pFQNnUP6yNizuLL5Wh3ha6AraI6HrJ3ABBaw6SIUHqlSTPQDs/SydiR98oTeaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-thumbnail.min.css"
-    integrity="sha512-rKuOh3xlF/027KUPuMok0ESsZ2zWPRzkniD3n5zZKCAtbiVkYw66DR4KtVAGf8dLPLr5DdyQs05BlSmEyXctkQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-zoom.min.css"
-    integrity="sha512-S/hU6dGSK3D7SRpCvRF/IEufIr6Ikgp5vDiJarhdeFGEnw36hWZ6gVBjnwBbzjA+NEP7D8Gdm+5LL1HEsyiB1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="description" content="Junaid Ali builds fast ecommerce stores, business websites, and custom web apps for clients worldwide. Available for new projects — get in touch on WhatsApp.">
   <meta name="keywords" content="Junaid Ali, ecommerce developer, web developer for hire, Shopify developer, Laravel developer, business website, online store, Karachi, Pakistan">
   <meta name="author" content="Junaid Ali">
@@ -113,36 +104,34 @@
       <!--
         - #NAVBAR
       -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link " data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-content-header">
+        <section class="cta-bar" aria-label="Get started">
+          <div class="cta-bar-inner">
+            <a id="ctaBookCall" class="cta-btn cta-btn--primary" href="#" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="calendar-outline"></ion-icon>
+              Book a free 15-min call
+            </a>
+            <a id="ctaGetQuote" class="cta-btn cta-btn--secondary" href="#" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="pricetag-outline"></ion-icon>
+              Get a project quote
+            </a>
+          </div>
+        </section>
 
-      <section class="cta-bar" aria-label="Get started">
-        <div class="cta-bar-inner">
-          <a id="ctaBookCall" class="cta-btn cta-btn--primary" href="#" target="_blank" rel="noopener noreferrer">
-            <ion-icon name="calendar-outline"></ion-icon>
-            Book a free 15-min call
-          </a>
-          <a id="ctaGetQuote" class="cta-btn cta-btn--secondary" href="#" target="_blank" rel="noopener noreferrer">
-            <ion-icon name="pricetag-outline"></ion-icon>
-            Get a project quote
-          </a>
-          <button type="button" id="ctaViewWork" class="cta-btn cta-btn--ghost">
-            <ion-icon name="briefcase-outline"></ion-icon>
-            View my work
-          </button>
-        </div>
-      </section>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link " data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <!--
         - #ABOUT
@@ -347,7 +336,7 @@
           <h2 class="h2 article-title">Selected Work</h2>
         </header>
         <p class="about-text" style="margin-top: -10px; margin-bottom: 25px;">
-          A sample of websites and platforms I've built for real businesses. Click any project to view it live.
+          Real projects for real businesses. Click any card to read the case study, or visit the live site.
         </p>
         <section class="projects">
           <ul class="filter-list">
@@ -380,111 +369,7 @@
               </li>
             </ul>
           </div>
-          <!-- Add LightGallery container -->
-          <ul id="lightgallery" class="project-list">
-            <li class="project-item active no-lightgallery" data-url="https://www.regalmediapress.com/" data-filter-item
-              data-category="websites">
-              <a href="https://www.regalmediapress.com/" target="_blank" rel="noopener noreferrer">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/work1- regal.webp" alt="Regal" loading="lazy">
-                </figure>
-                <h3 class="project-title">Regal Media Press</h3>
-                <p class="project-category">Publishing &amp; media website</p>
-              </a>
-            </li>
-            <li class="project-item active no-lightgallery" data-url="https://villagedukaan.com/" data-filter-item
-              data-category="websites">
-              <a href="https://villagedukaan.com/" target="_blank" rel="noopener noreferrer">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/work2 - VillageDukaan.webp" alt="VillageDukaan." loading="lazy">
-                </figure>
-                <h3 class="project-title">Village Dukaan</h3>
-                <p class="project-category">Community marketplace</p>
-              </a>
-            </li>
-
-            <!-- Web Development -->
-
-            <li class="project-item active no-lightgallery" data-url="https://www.kenduit.com/" data-filter-item
-              data-category="web apps">
-              <a href="https://www.kenduit.com/" target="_blank" rel="noopener noreferrer">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/kenduit.com.png" alt="Regal" loading="lazy">
-                </figure>
-                <h3 class="project-title">Kenduit Company Website</h3>
-                <p class="project-category">Corporate business website</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work1 - gfs.webp"
-              data-filter-item data-category="web apps">
-              <a href="./assets/images/portfolio/web_applications/work1 - gfs.webp">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/web_applications/work1 - gfs.webp" alt="gfs" loading="lazy"
-                    onerror="this.onerror=null; this.src='./assets/images/portfolio/web_applications/work1 - gfs.webp';"
-                    </figure>
-                  <h3 class="project-title">Global Fire Services</h3>
-                  <p class="project-category">Fire safety services platform</p>
-              </a>
-            </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.webp"
-              data-filter-item data-category="web apps">
-              <a href="./assets/images/portfolio/web_applications/work2 - aisp.webp">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/web_applications/work2 - aisp.webp"
-                    alt="Americal Institute of Safety Professionals" loading="lazy">
-                </figure>
-                <h3 class="project-title">American Institute of Safety Professionals</h3>
-                <p class="project-category">Professional training institute</p>
-              </a>
-            </li>
-            <li class="project-item active" data-src="./assets/images/portfolio/web_applications/work3 - sindhhec.webp"
-              data-filter-item data-category="web apps">
-              <a href="./assets/images/portfolio/web_applications/work3 - sindhhec.webp">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/web_applications/work3 - sindhhec.webp" alt="summary"
-                    loading="lazy">
-                </figure>
-                <h3 class="project-title">Sindh HEC Job Portal</h3>
-                <p class="project-category">Government recruitment portal</p>
-              </a>
-            </li>
-
-
-            
-            <li class="project-item active no-lightgallery" data-url="https://punjabimasala.se/home" data-filter-item
-              data-category="web apps">
-              <a href="https://punjabimasala.se/home" target="_blank" rel="noopener noreferrer">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/portfolio/punjabimasala.se.png" alt="Regal" loading="lazy">
-                </figure>
-                <h3 class="project-title">Punjabi Masala</h3>
-                <p class="project-category">Swedish food ecommerce store</p>
-              </a>
-            </li>
-
-          </ul>
+          <ul class="project-list" data-project-list></ul>
         </section>
       </article>
       <article class="contact" data-page="contact">
@@ -514,28 +399,64 @@
     <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
 
+  <div class="modal-container" data-project-modal-container>
+    <div class="overlay" data-project-overlay></div>
+    <section class="project-modal">
+      <header class="project-modal-header">
+        <div class="project-modal-header-text">
+          <p class="project-modal-industry" data-project-modal-industry></p>
+          <h4 class="h3 modal-title project-modal-title" data-project-modal-title></h4>
+        </div>
+        <button class="modal-close-btn project-modal-close" data-project-modal-close aria-label="Close case study">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <div class="project-modal-body">
+        <figure class="project-modal-img">
+          <img src="" alt="" data-project-modal-img width="600" loading="lazy">
+        </figure>
+        <div class="modal-content project-modal-content">
+          <ul class="project-modal-meta">
+            <li><strong>My role:</strong> <span data-project-modal-role></span></li>
+            <li><strong>Stack:</strong> <span data-project-modal-stack></span></li>
+          </ul>
+          <div class="project-modal-section">
+            <h5 class="project-modal-label">The problem</h5>
+            <p data-project-modal-problem></p>
+          </div>
+          <div class="project-modal-section">
+            <h5 class="project-modal-label">The result</h5>
+            <p data-project-modal-result></p>
+          </div>
+          <a class="project-modal-link" data-project-modal-link href="#" target="_blank" rel="noopener noreferrer">
+            View live site
+            <ion-icon name="open-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <!-- Defer main script -->
   <script defer src="./assets/js/script.js"></script>
+  <script defer src="./assets/js/portfolio.js"></script>
   <script defer src="./assets/js/sections.js"></script>
-  <!-- Load scripts asynchronously -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
-  <!-- Dynamic script loading -->
 
   <script>
-    // Register service worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
-          .then(registration => console.log('ServiceWorker registered'))
-          .catch(err => console.log('ServiceWorker registration failed:', err));
+          .then(() => console.log('ServiceWorker registered'))
+          .catch((err) => console.log('ServiceWorker registration failed:', err));
       });
     }
-    // Lazy load images
+
     document.addEventListener('DOMContentLoaded', function () {
       const lazyImages = document.querySelectorAll('img.lazy');
       const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const img = entry.target;
             img.src = img.dataset.src;
@@ -544,40 +465,9 @@
           }
         });
       });
-      lazyImages.forEach(img => imageObserver.observe(img));
+      lazyImages.forEach((img) => imageObserver.observe(img));
     });
-    // Load LightGallery dynamically
-    if (document.getElementById('lightgallery')) {
-      Promise.all([
-        loadScript('https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js'),
-        loadScript('https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js'),
-        loadScript('https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js')
-      ]).then(() => {
-        lightGallery(document.getElementById('lightgallery'), {
-          selector: '.project-item:not(.no-lightgallery)',
-          thumbnail: true,
-          plugins: [lgThumbnail, lgZoom],
-          speed: 500
-        });
-      });
-    }
-    function loadScript(src) {
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.async = true;
-        script.onload = resolve;
-        script.onerror = reject;
-        document.body.appendChild(script);
-      });
-    }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js"
-    integrity="sha512-jZxB8WysJ6S6e4Hz5IZpAzR1WiflBl0hBxriHGlLkUN32T18+rD1aLNifa1KTll/zx8lIfWVP1NqEjHi/Khy5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js"
-    integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     // International format: country code + number, no + or spaces (e.g. 923001234567)
@@ -588,16 +478,6 @@
 
     function buildWhatsAppUrl(message) {
       return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    }
-
-    function goToPortfolio() {
-      const portfolioNav = [...document.querySelectorAll('[data-nav-link]')].find(
-        (link) => link.textContent.trim().toLowerCase() === 'portfolio'
-      );
-      if (portfolioNav) portfolioNav.click();
-
-      const projects = document.querySelector('.projects');
-      if (projects) projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -617,9 +497,6 @@
 
       const getQuote = document.getElementById('ctaGetQuote');
       if (getQuote) getQuote.href = buildWhatsAppUrl(WHATSAPP_QUOTE_MSG);
-
-      const viewWork = document.getElementById('ctaViewWork');
-      if (viewWork) viewWork.addEventListener('click', goToPortfolio);
 
       const contactForm = document.getElementById('contactForm');
       if (contactForm) contactForm.addEventListener('submit', function (e) {
