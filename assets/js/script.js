@@ -25,6 +25,8 @@ const overlay = document.querySelector("[data-overlay]");
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
+const modalCompany = document.querySelector("[data-modal-company]");
+const modalDate = document.querySelector("[data-modal-date]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
@@ -38,10 +40,30 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    const avatarEl = this.querySelector("[data-testimonials-avatar]");
+    if (modalImg && avatarEl) {
+      modalImg.textContent = avatarEl.tagName === "IMG"
+        ? (avatarEl.alt || "?").charAt(0).toUpperCase()
+        : avatarEl.textContent.trim();
+    }
+
+    const titleEl = this.querySelector("[data-testimonials-title]");
+    if (modalTitle && titleEl) modalTitle.innerHTML = titleEl.innerHTML;
+
+    const companyEl = this.querySelector("[data-testimonials-company]");
+    if (modalCompany) {
+      modalCompany.innerHTML = companyEl ? companyEl.innerHTML : "";
+      modalCompany.style.display = companyEl ? "" : "none";
+    }
+
+    const dateEl = this.querySelector("[data-testimonials-date]");
+    if (modalDate) {
+      modalDate.innerHTML = dateEl ? dateEl.innerHTML : "";
+      modalDate.style.display = dateEl ? "" : "none";
+    }
+
+    const textEl = this.querySelector("[data-testimonials-text]");
+    if (modalText && textEl) modalText.innerHTML = textEl.innerHTML;
 
     testimonialsModalFunc();
 
@@ -50,8 +72,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+if (overlay) overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -144,16 +166,21 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+    const pageName = this.textContent.trim().toLowerCase();
+
+    for (let j = 0; j < navigationLinks.length; j++) {
+      navigationLinks[j].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
+      if (pageName === pages[j].dataset.page) {
+        pages[j].classList.add("active");
       }
     }
+
+    window.scrollTo(0, 0);
 
   });
 }

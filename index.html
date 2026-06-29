@@ -28,6 +28,10 @@
         <div class="info-content">
           <h1 class="name" title="Junaid Ali">Junaid Ali</h1>
           <p class="title">Web &amp; Ecommerce Developer</p>
+          <p class="availability-badge">
+            <span class="availability-dot" aria-hidden="true"></span>
+            <span class="availability-text">Available for new projects — response within 24 hours</span>
+          </p>
         </div>
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -37,6 +41,36 @@
       <div class="sidebar-info_more">
         <div class="separator"></div>
         <ul class="contacts-list">
+          <li class="contact-item contact-item--highlight">
+            <div class="icon-box">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Chat on Whatsapp</p>
+              <a href="#" id="whatsappSidebarLink" class="contact-link contact-link--cta" target="_blank"
+                rel="noopener noreferrer">+92 313 3533027</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/engrjunaidali" class="contact-link" target="_blank"
+                rel="noopener noreferrer">engrjunaidali</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/junaidali113/" class="contact-link" target="_blank"
+                rel="noopener noreferrer">junaidali113</a>
+            </div>
+          </li>
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -50,25 +84,6 @@
           </li>
           <li class="contact-item">
             <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Linkedin</p>
-              <a href="https://www.linkedin.com/in/junaidali113/" class="contact-link">junaidali113</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">WhatsApp</p>
-              <a href="#" id="whatsappSidebarLink" class="contact-link" target="_blank"
-                rel="noopener noreferrer">+92 313 3533027</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
             <div class="contact-info">
@@ -78,23 +93,31 @@
           </li>
         </ul>
         <div class="separator"></div>
-        <!-- <ul class="social-list">
+        <ul class="social-list" aria-label="Social profiles">
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="#" id="whatsappSocialLink" class="social-link social-link--whatsapp" target="_blank"
+              rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.linkedin.com/in/junaidali113/" class="social-link social-link--linkedin" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/engrjunaidali" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub profile" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-        </ul> -->
+          <li class="social-item">
+            <a href="mailto:thejunaidali21@gmail.com" class="social-link" aria-label="Email" title="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
     </aside>
     <!--
@@ -127,6 +150,9 @@
               <button class="navbar-link " data-nav-link>About</button>
             </li>
             <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Testimonials</button>
+            </li>
+            <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Resume</button>
             </li>
           </ul>
@@ -152,9 +178,6 @@
           <p>
             Clients work with me because I communicate clearly, hit deadlines, and care about results — not just code.
             Typical outcomes include smoother checkout flows, 90+ Google PageSpeed scores, and sites that rank better in search.
-          </p>
-          <p>
-            <strong>Available for new projects.</strong> Tell me what you're building and I'll get back to you within 24 hours.
           </p>
           <p>
             <a style="color: var(--orange-yellow-crayola);" href="#" id="whatsappAboutLink" target="_blank"
@@ -213,36 +236,76 @@
             </li>
           </ul>
         </section>
-        <!-- testimonials -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.webp" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+      </article>
+
+      <article class="testimonials-page" data-page="testimonials">
+        <header>
+          <h2 class="h2 article-title">Testimonials</h2>
+        </header>
+        <p class="about-text testimonials-intro">
+          Recommendations from colleagues and clients on <a href="https://www.linkedin.com/in/junaidali113/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+        <section class="testimonials">
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <span class="testimonials-initials" data-testimonials-avatar aria-hidden="true">TY</span>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tayyib Yasin</h4>
+                <p class="testimonials-item-company" data-testimonials-company>
+                  Full stack Laravel Developer · Magento · WordPress · React Expert
+                </p>
+                <p class="testimonials-item-date" data-testimonials-date>
+                  August 21, 2025 · Worked with Junaid on different teams
+                </p>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Junaid is a very talented developer with great attention to detail. He ensures that the task is
+                    completed in every aspect, and for that, he'll go above and beyond every time. He is a hard-working
+                    person and a kind human being. I recommend him for any kind of development work. He will do it
+                    perfectly.
+                  </p>
+                </div>
+                <p class="testimonials-source">
+                  <ion-icon name="logo-linkedin"></ion-icon> LinkedIn recommendation
                 </p>
               </div>
-            </div>
-          </section>
-        </div>
-        <!-- clients -->
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <span class="testimonials-initials" data-testimonials-avatar aria-hidden="true">AK</span>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aseer Khan</h4>
+                <p class="testimonials-item-company" data-testimonials-company>
+                  Designer &amp; Social Media Marketer · 15+ Brands Trusted
+                </p>
+                <p class="testimonials-item-date" data-testimonials-date>
+                  June 10, 2025 · Worked with Junaid on the same team
+                </p>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I've been working with Junaid for the past year on multiple projects, and it's always been a smooth
+                    experience. He's professional, easy to work with, and always delivers on time. Highly recommend him
+                    for any project – you'll be in good hands!
+                  </p>
+                </div>
+                <p class="testimonials-source">
+                  <ion-icon name="logo-linkedin"></ion-icon> LinkedIn recommendation
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <p class="testimonials-linkedin-cta">
+          <a href="https://www.linkedin.com/in/junaidali113/" target="_blank" rel="noopener noreferrer">
+            View all recommendations on LinkedIn
+            <ion-icon name="open-outline"></ion-icon>
+          </a>
+        </p>
       </article>
+
       <article class="resume" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -437,6 +500,27 @@
     </section>
   </div>
 
+  <div class="modal-container" data-modal-container>
+    <div class="overlay" data-overlay></div>
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <span class="testimonials-initials testimonials-initials--lg" data-modal-img aria-hidden="true"></span>
+        </figure>
+        <img src="./assets/images/icon-quote.svg" alt="">
+      </div>
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-modal-title></h4>
+        <p class="modal-company" data-modal-company></p>
+        <p class="modal-date" data-modal-date></p>
+        <div data-modal-text></div>
+      </div>
+    </section>
+  </div>
+
   <!-- Defer main script -->
   <script defer src="./assets/js/script.js"></script>
   <script defer src="./assets/js/portfolio.js"></script>
@@ -488,6 +572,9 @@
 
       const sidebarLink = document.getElementById('whatsappSidebarLink');
       if (sidebarLink) sidebarLink.href = defaultUrl;
+
+      const socialWhatsapp = document.getElementById('whatsappSocialLink');
+      if (socialWhatsapp) socialWhatsapp.href = defaultUrl;
 
       const aboutLink = document.getElementById('whatsappAboutLink');
       if (aboutLink) aboutLink.href = defaultUrl;
